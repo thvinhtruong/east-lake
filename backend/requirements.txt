@@ -1,0 +1,36 @@
+# ---- YOLOv5
+numpy
+pandas
+Pillow
+PyYAML
+scipy
+torch
+torchvision
+opencv-python
+Cython
+requests
+tqdm
+tensorboard
+matplotlib
+seaborn
+
+# -- API
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+
+# -- debugging
+debugpy
+
+# --- logging
+# wandb
+
+# --- export
+# coremltools
+# onnx
+# scikit-learn # for coreml quantization
+
+# --- extras
+# thop  # FLOPS computation
+# pycocotools>=2.0  # COCO mAP
