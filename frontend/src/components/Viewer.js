@@ -80,6 +80,7 @@ export default function Viewer() {
         ref={webcamRef}
         screenshotFormat="image/jpeg"
         width="50%"
+        imageSmoothing={true}
         videoConstraints={videoConstraints}
 
         onUserMediaError={(error) => {
@@ -101,6 +102,10 @@ export default function Viewer() {
 
       <p>
         <button onClick={detect}>Detect</button>
+      </p>
+
+      <p>
+        <button onClick={capture}>Capture</button>
       </p>
 
       <p>
