@@ -9,7 +9,10 @@ yolo_model = os.getenv("YOLO_MODEL", "yolov5s")
 
 logging.info(f"YOLO model - {yolo_model}")
 
-model = torch.hub.load("ultralytics/yolov5", 'custom', path='/Users/truongvinh/projects/yolo-v5/ml-yolo/backend/best.pt', force_reload=True)
+# doi path nay lai
+pt_path = f"/Users/truongvinh/projects/yolo-v5/ml-yolo/backend/{yolo_model}.pt"
+
+model = torch.hub.load("ultralytics/yolov5", 'custom', path=pt_path, force_reload=True)
 
 
 def yolov5(img):
